@@ -1,13 +1,13 @@
-import './App.css';
+import React from 'react'
+import './App.css'
 
+const handleclickevent = (event) => {
+  alert('Yeeeyy you did it!!', event)
+}
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-       <h1>Hello Tanatswa</h1>
-      </header>
-    </div>
-  );
+  <h1>Welcome Tanatswa, please click the button.</h1>
+  return <button onClick={handleclickevent}> Click here</button>
 }
 
-export default App;
+export default App
+
